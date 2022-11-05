@@ -69,7 +69,7 @@ deletePlaylist = async (req, res) => {
                 (playlist) => playlist != req.params.id
               );
               User.findOneAndUpdate({ email: list.ownerEmail }, user, () => {
-                return res.status(200).json({});
+                return res.status(200).json({ success: true });
               }).catch((err) => console.log(err));
             }
             asyncUpdateUserPlaylist();
