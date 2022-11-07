@@ -23,10 +23,12 @@ function WorkspaceScreen(props) {
     currentList = store.currentList;
   }
   return (
-    <Box>
+    <Box id="playlister-cards">
       <List
-        id="playlist-cards"
-        sx={{ width: "100%", bgcolor: "background.paper" }}
+        sx={{
+          width: "100%",
+          bgcolor: "background.paper",
+        }}
       >
         {currentList.songs.map((song, index) => (
           <SongCard

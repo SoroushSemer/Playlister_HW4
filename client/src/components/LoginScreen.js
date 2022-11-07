@@ -77,6 +77,7 @@ export default function LoginScreen() {
               name="email"
               autoComplete="email"
               autoFocus
+              type="email"
             />
             <TextField
               margin="normal"
